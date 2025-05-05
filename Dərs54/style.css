@@ -1,0 +1,45 @@
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
+    ;
+}
+
+.navBar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.navBar li {
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li :hover {
+    color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+.c {
+    text-align: center;
+}
+.c1{
+    display: flex;
+    justify-content: space-around;
+}
