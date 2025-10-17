@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //concat
+        let baby = ["Cahid", "Hesen"]
+        let baby2 = ["Elcin", "Huseyn", "Murad"]
+        let babies = baby.concat(baby2)
+        console.log(babies);
+
+        //copyWithin
+        let meyve = ["Banan", "Nar", "Alma", "Manqo"]
+        let copy = meyve.copyWithin(2, 0)
+        console.log(copy);
+
+        //fill
+        let meyve2 = ["Banan", "Nar", "Alma", "Manqo"]
+        let copy2 = meyve2.fill("Mandarin")
+        console.log(copy2);
+
+        //filter
+        let yaslar = [32, 45, 22, 13]
+        let yass = yaslar.filter(yeniyetme)
+        function yeniyetme(age) {
+            return age <= 15
+        }
+        console.log(yass);
+
+        //forEach
+        const name = ["aysel", "murad", "ramin", "leyla"]
+        name.forEach((element, nom) => {
+            console.log(`${nom + 1}. ${element}`);
+
+        }
+        )
+
+        //includes
+        let meyveler = ["Alma", "Manqo", "Nar", "Mandarin"]
+        let terevez = meyveler.includes("Qarpiz")
+        let n = meyveler.includes("Mandarin")
+        console.log(terevez);
+        console.log(n);
+
+        //indexOF
+        let gg = ["Pamidor", "Kakos", "Banan", "Alma"]
+        let ga = gg.indexOf("Alma")
+        console.log(ga);
+
+        //lastIndexOf
+        let fruits = ["Banana", "Orange", "Apple", "Mango"]
+        let a = fruits.lastIndexOf("Apple")
+        console.log(a);
+
+        //length
+        let ffruits = ["Pamidor", "Kakos", "Banan", "Alma"]
+        let ee = ffruits.length
+        console.log(ee);
+
+        //reverse
+        let frruits = ["Pamidor", "Kakos", "Banan", "Alma"]
+        console.log(frruits.reverse());
+
+        //sort
+        let fruuits = ["Banana", "Orange", "Apple", "Mango"]
+        console.log(fruuits.sort());
+
+        //from
+        let myArr = Array.from("abcdefg")
+        console.log(myArr);
+
+        //entries
+        let fruiits = ["Banana", "Orange", "Apple", "Mango"]
+        console.log(fruiits.entries(4));
+
+
+
+
+        let user = {
+            name: "Cahid",
+            gender: "Kisi",
+            age: "13",
+        }
+        delete user.age
+        console.log(user);
+
+
+    </script>
+</body>
+
+</html>
