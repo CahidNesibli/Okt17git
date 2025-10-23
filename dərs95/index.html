@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        let student = {
+            firtsName: "Cahid",
+            lastName: "Nesibli",
+            get fullName() {
+                return this.firtsName + " , " + this.lastName
+            }
+        }
+        console.log(student.fullName);
+
+        //2
+        let user = {
+            name: "Lale",
+            surname: "Huseynova",
+            get fullName() {
+                return this.name + " " + this.surname
+            }
+        }
+        console.log(user.fullName);
+
+        //3
+        let product = {
+            name: "Book",
+            priceUSD: 10,
+
+            get priceAZN() {
+                return this.priceUSD * 1.7;
+            }
+        };
+
+        console.log(product.priceAZN); // 17
+
+    </script>
+</body>
+
+</html>
