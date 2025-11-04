@@ -24,7 +24,9 @@
             name: "Lale",
             surname: "Huseynova",
             set fullName(parametr) {
-                return this.name + " " + this.surname
+                let party = parametr.split("")
+                this.name = [0]
+                this.surname = [1]
             }
         }
         console.log(user.fullName);
@@ -39,7 +41,7 @@
             }
         };
 
-        console.log(product.priceAZN); // 17
+        console.log(product.priceAZN); 
 
     </script>
 </body>

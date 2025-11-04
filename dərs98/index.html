@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        class Calculator {
+            constructor() {
+                console.log("Kalkulyator hazirdir!");
+            }
+
+            add(a, b) {
+                const result = a + b;
+                console.log(`${a} + ${b} = ${result}`);
+                return result;
+            }
+
+            subtract(a, b) {
+                const result = a - b;
+                console.log(`${a} - ${b} = ${result}`);
+                return result;
+            }
+
+            multiply(a, b) {
+                const result = a * b;
+                console.log(`${a} * ${b} = ${result}`);
+                return result;
+            }
+
+            divide(a, b) {
+                if (b === 0) {
+                    console.log("Sifira bölmək mümkün deyil!");
+                    return undefined;
+                }
+                const result = a / b;
+                console.log(`${a} / ${b} = ${result}`);
+                return result;
+            }
+        }
+        const calcu = new Calculator();
+        console.log(calcu);
+
+        //2
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+
+
+            area() {
+                const resul = this.width * this.height;
+                console.log(`Sahə: ${this.width} * ${this.height} = ${resul}`);
+                return resul;
+            }
+
+
+            perimeter() {
+                const resul = 2 * (this.width + this.height);
+                console.log(`Perimetr: 2 * (${this.width} + ${this.height}) = ${resul}`);
+                return resul;
+            }
+        }
+        const rect = new Rectangle(10, 5);
+        console.log(rect);
+
+        //3
+        class Player {
+            constructor(name, health, power) {
+                this.name = name;
+                this.health = health;
+                this.power = power;
+            }
+
+
+            attack() {
+                console.log(`${this.name} hücum etdi!`);
+            }
+
+
+            takeDamage(damage) {
+                this.health -= damage;
+                if (this.health < 0) this.health = 0;
+                console.log(`${this.name} zərbə aldi! Sağlamliq: ${this.health}`);
+            }
+        }
+
+
+        const player1 = new Player("Cahid", 100, 20);
+        console.log(player1);
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(n, a, g) {
+                this.name = n;
+                this.age = a;
+                this.grade = g;
+            }
+            showInfo() {
+                console.log(`Menim ${age} yasim var ${grade} sinifde oxuyuram`);
+
+            }
+        }
+        let str = new Student("Cahid", 12, 7)
+        console.log(str);
+
+        //2
+        class Person {
+            constructor(surname, name, age, gender) {
+                this.surname = surname;
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+            showIcon() {
+                console.log(`Menim adim ${surname}, ${name}, ${age} yasim var, ${gender} cinsiyem`);
+
+            }
+        }
+        let stc = new Person("Nesibli", "Cahid", 12, "kisi")
+        console.log(stc);
+        //3
+        class Preson2 {
+            constructor(name, age2) {
+                this.name = name;
+                this.age = age2
+            }
+            celebrateBirthday() {
+                this.age = this.age + 1
+            }
+
+        }
+
+        const p2 = new Preson2("Cahid", 12)
+        p2.celebrateBirthday()
+        console.log(p2);
+    </script>
+</body>
+
+</html>
