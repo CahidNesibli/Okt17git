@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shopping-list button {
+            border: none;
+            background-color: none;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .clicked {
+            color: rgb(154, 152, 152);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="shopping-list">
+        <li><button id="clickable">Milk</button></li>
+        <li><button id="clickable">Butter</button></li>
+        <li><button id="clickable">Bread</button></li>
+        <li><button id="clickable">Cheese</button></li>
+    </ul>
+    <script>
+        let buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.add('clicked');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
